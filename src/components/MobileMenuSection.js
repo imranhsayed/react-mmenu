@@ -8,7 +8,7 @@ class MobileMenuSection extends React.Component {
 			<div className="rmm-header">
 				<MobileMenu>
 					{ menuData.length && menuData.map( item => (
-						<a href={item.url}>{item.label}</a>
+						<a href={item.url} key={item.label}>{item.label}</a>
 					) ) }
 				</MobileMenu>
 			</div>
