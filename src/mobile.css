@@ -47,6 +47,13 @@
 	 transition: all 0.25s ease;
 }
 
+/*Slide Animation*/
+.rmm-animation-slide {
+	left: -100vw;
+	transition: left 0.5s ease-in;
+	position: absolute;
+}
+
 /*When sidebar is open Convert straight lines into cross*/
 .rmm-burger-icon.open:before {
 	transform: rotate3d(0, 0, 1, 45deg);

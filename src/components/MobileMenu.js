@@ -20,7 +20,7 @@ class MobileMenu extends React.Component {
 	};
 
 	render() {
-		const { children } = this.props;
+		const { children , slide } = this.props;
 		const { showMobileMenu } = this.state;
 
 		return(
@@ -28,7 +28,11 @@ class MobileMenu extends React.Component {
 				{ children.length && (
 					<React.Fragment>
 						<BurgerIcon handleClick={ this.handleMenuClick } />
-						<Sidebar menuData={ children } show={ showMobileMenu }/>
+						<Sidebar
+							menuData={ children }
+							show={ showMobileMenu }
+							slide={ undefined !== slide ? slide : false }
+						/>
 					</React.Fragment>
 				) }
 			</React.Fragment>

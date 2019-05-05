@@ -6,7 +6,9 @@ class MobileMenuSection extends React.Component {
 	render() {
 		return(
 			<div className="rmm-header">
-				<MobileMenu>
+				<MobileMenu
+					slide={true}
+				>
 					{ menuData.length && menuData.map( item => (
 						<a href={item.url} key={item.label}>{item.label}</a>
 					) ) }
