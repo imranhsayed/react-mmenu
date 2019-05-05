@@ -1,25 +1,16 @@
 import React from 'react';
 import './mobile.css';
-import DesktopMenu from './components/DesktopMenu';
-import MobileMenu from "./components/MobileMenu";
+import DesktopMenuSection from "./components/DesktopMenuSection";
+import MobileMenuSection from "./components/MobileMenuSection";
 
 class App extends React.Component {
-	state = {
-		name : 'Praveen',
-		list : ['Services', 'Home', 'Services', 'Home']
-	}
-	
+
+
 	render() {
 		return (
 			<div>
-				<DesktopMenu>
-					{
-						this.state.list.map(l => (
-							<a href="#" success="true">{l}</a>
-						))
-					}
-				</DesktopMenu>
-				<MobileMenu/>
+				<DesktopMenuSection/>
+				<MobileMenuSection/>
 			</div>
 		);
 	}
