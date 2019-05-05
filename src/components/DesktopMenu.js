@@ -2,9 +2,27 @@ import React, { Component } from 'react';
 
 class DesktopMenu extends Component {
   render() {
+    const { children } = this.props;
+    console.log(children)
     return (
       <div>
-        Hello from Desktop Menu
+        <nav>
+          <ul>
+            {
+              children.map(child => (
+                <li>
+                  <a href={child.props.href}
+                  style = {
+                    {
+                      backgroundColor: child.props.success ? 'red' : 'black'
+                    }
+                  }
+                  >{child.props.children} </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
       </div>
     )
   }
