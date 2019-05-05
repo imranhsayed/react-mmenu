@@ -10,7 +10,7 @@ class MobileMenu extends React.Component {
 				{ children.length && (
 					<React.Fragment>
 						<BurgerIcon/>
-						<Sidebar data={children}/>
+						<Sidebar menuData={children}/>
 					</React.Fragment>
 				) }
 			</React.Fragment>
