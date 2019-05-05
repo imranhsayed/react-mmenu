@@ -19,9 +19,7 @@ class App extends React.Component {
 						))
 					}
 				</DesktopMenu>
-				<div className="rmm-header">
-					<MobileMenu/>
-				</div>
+				<MobileMenu/>
 			</div>
 		);
 	}
