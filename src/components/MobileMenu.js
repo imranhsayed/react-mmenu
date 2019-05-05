@@ -4,10 +4,15 @@ import Sidebar from './elements/Sidebar';
 
 class MobileMenu extends React.Component {
 	render() {
+		const { children } = this.props;
 		return(
 			<React.Fragment>
-				<BurgerIcon/>
-				<Sidebar/>
+				{ children.length && (
+					<React.Fragment>
+						<BurgerIcon/>
+						<Sidebar data={children}/>
+					</React.Fragment>
+				) }
 			</React.Fragment>
 		);
 	}
