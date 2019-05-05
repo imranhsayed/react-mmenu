@@ -1,4 +1,4 @@
-const menuData = [
+export const menuData = [
 	{
 		label: 'Home',
 		url: 'https://imransayed.com',

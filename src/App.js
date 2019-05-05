@@ -1,6 +1,10 @@
 import React from 'react';
 import './mobile.css';
+<<<<<<< HEAD
 import DesktopMenu from './components/DesktopMenu';
+=======
+import MobileMenu from "./components/MobileMenu";
+>>>>>>> 812d33d17766bae5776a4a567e6bca077baae479
 
 class App extends React.Component {
 	state = {
@@ -18,6 +22,9 @@ class App extends React.Component {
 						))
 					}
 				</DesktopMenu>
+				<div className="rmm-header">
+					<MobileMenu/>
+				</div>
 			</div>
 		);
 	}
