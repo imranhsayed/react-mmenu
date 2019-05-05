@@ -1,19 +1,20 @@
 import React from 'react';
 import DesktopMenu from "./DesktopMenu";
+import { menuData } from '../menuData';
+
 
 class DesktopMenuSection extends React.Component {
 
 	state = {
 		name : 'Praveen',
-		list : ['Services', 'Home', 'Services', 'Home']
 	};
 
 	render() {
 		return(
 			<DesktopMenu>
 				{
-					this.state.list.map(l => (
-						<a href="#" success="true">{l}</a>
+					menuData.map( ( data, i ) => (
+						<a href={ data.url + i } className={ data.className } key={ data.url }>{ data.label }</a>
 					))
 				}
 			</DesktopMenu>
