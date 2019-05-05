@@ -6,10 +6,10 @@ class Sidebar extends React.Component {
 		return (
 			<div className="rmm-sidebar-container">
 				{ menuData.length && (
-					<ul>
+					<ul className="rmm-mobile-menu-lists">
 						{ menuData.map( item => (
-							<li key={item.label}>
-								<a href={item.url}>
+							<li key={item.label} className="rmm-mobile-menu-list">
+								<a href={item.url} className="rmm-mobil-menu-link">
 									{ item.label }
 								</a>
 							</li>

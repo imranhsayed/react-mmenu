@@ -60,3 +60,17 @@
 	top: 0;
 	width: 22px;
 }
+
+/*List Items*/
+.rmm-mobile-menu-lists {
+	margin: 0;
+	padding: 0;
+}
+
+.rmm-mobile-menu-lists {
+	list-style: none;
+}
+
+.rmm-mobil-menu-link {
+	text-decoration: none;
+}
