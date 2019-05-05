@@ -1,10 +1,15 @@
-/*Burger Icon */
+/**
+* 1.0 Burger Icon
+*
+* Burger Icon Styles
+*/
+
 .rmm-burger-icon {
 	position: relative;
 	display: inline-block;
 	width: 24px;
 	height: 2px;
-	background: #fff;
+	background: #BEC1C7;
 	border-radius: 0;
 	transition: all 0.25s ease;
 	vertical-align: middle;
@@ -20,20 +25,13 @@
 	 display: inline-block;
 	 width: 24px;
 	 height: 2px;
-	 background: #fff;
+	 background: #BEC1C7;
 	 border-radius: 0;
 	 transition: all 0.25s ease;
 	 top: -9px;
  }
 
-.rmm-burger-icon.open:before {
-	 transform: rotate3d(0, 0, 1, 45deg);
-	 transform-origin: 50% 50%;
-	 top: 0;
-	 width: 22px;
- }
-
-.rmm-burger-icon.open:after {
+.rmm-burger-icon:after {
 	 position: absolute;
 	 left: 0;
 	 content: '';
@@ -43,7 +41,22 @@
 	 display: inline-block;
 	 width: 24px;
 	 height: 2px;
-	 background: #fff;
+	 background: #BEC1C7;
 	 border-radius: 0;
 	 transition: all 0.25s ease;
- }
+}
+
+/*When sidebar is open Convert straight lines into cross*/
+.rmm-burger-icon.open:before {
+	transform: rotate3d(0, 0, 1, 45deg);
+	transform-origin: 50% 50%;
+	top: 0;
+	width: 22px;
+}
+
+.rmm-burger-icon.open:after {
+	transform: rotate3d(0, 0, 1, -45deg);
+	transform-origin: 50% 50%;
+	top: 0;
+	width: 22px;
+}

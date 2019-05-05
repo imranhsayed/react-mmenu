@@ -1,4 +1,5 @@
 import React from 'react';
+import { menuData } from "../../menuData";
 
 class Sidebar extends React.Component {
 	render() {
@@ -7,7 +8,7 @@ class Sidebar extends React.Component {
 				{ menuData.length && (
 					<ul>
 						{ menuData.map( item => (
-							<li>
+							<li key={item.label}>
 								<a href={item.url}>
 									{ item.label }
 								</a>

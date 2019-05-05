@@ -1,4 +1,6 @@
 import React from 'react';
+import BurgerIcon from './elements/BurgerIcon';
+import Sidebar from './elements/Sidebar';
 
 class MobileMenu extends React.Component {
 	render() {
@@ -10,3 +12,5 @@ class MobileMenu extends React.Component {
 		);
 	}
 }
+
+export default MobileMenu;
