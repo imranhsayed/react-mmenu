@@ -1,0 +1,49 @@
+/*Burger Icon */
+.rmm-burger-icon {
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 2px;
+	background: #fff;
+	border-radius: 0;
+	transition: all 0.25s ease;
+	vertical-align: middle;
+	border: none;
+}
+
+.rmm-burger-icon:before {
+	 position: absolute;
+	 left: 0;
+	 content: '';
+	 -webkit-transform-origin: 2px center;
+	 transform-origin: 2px center;
+	 display: inline-block;
+	 width: 24px;
+	 height: 2px;
+	 background: #fff;
+	 border-radius: 0;
+	 transition: all 0.25s ease;
+	 top: -9px;
+ }
+
+.rmm-burger-icon.open:before {
+	 transform: rotate3d(0, 0, 1, 45deg);
+	 transform-origin: 50% 50%;
+	 top: 0;
+	 width: 22px;
+ }
+
+.rmm-burger-icon.open:after {
+	 position: absolute;
+	 left: 0;
+	 content: '';
+	 -webkit-transform-origin: 2px center;
+	 transform-origin: 2px center;
+	 top: 9px;
+	 display: inline-block;
+	 width: 24px;
+	 height: 2px;
+	 background: #fff;
+	 border-radius: 0;
+	 transition: all 0.25s ease;
+ }
