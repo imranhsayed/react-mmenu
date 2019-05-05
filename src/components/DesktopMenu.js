@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class DesktopMenu extends Component {
   render() {
     const { children } = this.props;
-    console.log(children)
     return (
       <div>
         <nav>
