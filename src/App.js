@@ -6,6 +6,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<div className="rmm-header" />
+				hello
 			</div>
 		);
 	}
